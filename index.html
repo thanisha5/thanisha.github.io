@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .scrolling-text{
+            position: absolute;
+            white-space: nowrap;
+            animation: scrollText 100s linear infinite;
+        }
+        .blinking-text{
+            animation: blinkText 20s alternate infinite;
+        }
+        @keyframes scrollText{
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+        @keyframes blinkText{
+            0%,100%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+        }
+    </style>
+    <title>Scrolling and binking text</title>
+</head>
+<body>
+    <div class="scrolling-text">
+        <h1>THIS IS THE SCROLLING TEXT</h1>
+    </div>
+    <br>
+    <br>
+    <div class="blinking-text">
+        <p>In this enchanted world, Lily befriended a wise old owl, danced with mischievous fairies, and shared stories with a gentle giant who guarded the entrance to the realm. Each day brought new adventures and lessons, and Lily's heart swelled with gratitude for the magical friends who had become her family.
+
+            However, as time passed, Lily began to feel a yearning for her own world—the village she called home. Her magical companions understood her longing and, with a bittersweet farewell, guided her back to the tiny door beneath the ancient oak tree.
+            In this enchanted world, Lily befriended a wise old owl, danced with mischievous fairies, and shared stories with a gentle giant who guarded the entrance to the realm. Each day brought new adventures and lessons, and Lily's heart swelled with gratitude for the magical friends who had become her family.
+
+            However, as time passed, Lily began to feel a yearning for her own world—the village she called home. Her magical companions understood her longing and, with a bittersweet farewell, guided her back to the tiny door beneath the ancient oak tree.
+        </p>
+        <marquee><img src="img.jpg"></marquee>
+        
+    </div>
+   
+</body>
+</html>
